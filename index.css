@@ -61,11 +61,11 @@ span{
 
 #vague{
 position: absolute;
-top: 345px;
+top: 395px;
 left: 536px;
 float: right;
 width: 1000px;
-height: 400px;
+height: 350px;
     
 }
 #content{
@@ -76,5 +76,19 @@ height: 400px;
     background-color: white;
     width: 1197px;
     height: 655.6px;
+    
+}
+#content h1{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    margin-top: 150px;
+    margin-left: 180px;
+    font-size: 60px;
+}
+#content p{
+    font-size: 25px;
+    font-family: 'Montserrat';
+    margin-left: 180px;
+    font-weight: medium;
     
 }
