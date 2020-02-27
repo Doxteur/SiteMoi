@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 head,body{
     margin: 0;
+    
 }
 #header{
     position:absolute;
@@ -56,4 +57,14 @@ span{
 #skill{
     height:400px;
     margin-left: 45px;
+}
+
+#vague{
+position: absolute;
+top: 345px;
+left: 536px;
+float: right;
+width: 1000px;
+height: 400px;
+    
 }
