@@ -68,3 +68,13 @@ width: 1000px;
 height: 400px;
     
 }
+#content{
+    float: left;
+    position: absolute;
+    top:90px;
+    left: 339px;
+    background-color: white;
+    width: 1197px;
+    height: 655.6px;
+    
+}
