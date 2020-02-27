@@ -1,7 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+a:visited{
+    color: black;
+    text-decoration: none;
+}
+a:link{
+    color: black;
+    text-decoration: none;
+}
+
 head,body{
     margin: 0;
     
+}
+#page1{
+    height: 660px;
 }
 #header{
     position:absolute;
@@ -16,7 +28,6 @@ head,body{
     margin-left: 140px;
     margin-top: 13px;
     z-index: 5;
-    
 }
 #inner_header #list{
     float: right;  
@@ -41,6 +52,7 @@ head,body{
     background-color: #252B2F;
     float: left;
     
+    
 }
 #titre{
     color:white;
@@ -61,12 +73,13 @@ span{
 
 #vague{
 position: absolute;
-top: 395px;
-left: 536px;
+top: 350px;
+left: 636px;
 float: right;
-width: 1000px;
-height: 350px;
-    
+width: 900px;
+height: 395px;
+z-index: 1;
+    pointer-events:none
 }
 #content{
     float: left;
@@ -89,6 +102,32 @@ height: 350px;
     font-size: 25px;
     font-family: 'Montserrat';
     margin-left: 180px;
-    font-weight: medium;
+    font-weight: 500;
     
+}
+
+#button{
+    background-color:#F3D124;
+    float: left;
+    margin-left: 180px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 30px;
+    padding: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 5px;
+    color:white;
+        
+}
+#page2{
+position: relative;
+    top:65px;
+ height: 860px;
+ width: 100%;
+ background-color: red;
+ z-index: 5;
+}
+#page2 h1{
+    color:blue;
 }
