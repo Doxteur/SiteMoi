@@ -77,8 +77,8 @@
 <br>Here's some of the game i made in a week :
 </p>
 
-    <h2 id="buttonpage2">
-        My Games
+    <h2 id="buttonpage2"> <a href="https://simmer.io/@doxteur">My Games
+    </a>
     </h2>
             
         </div>
@@ -95,47 +95,87 @@
     
         
     </section>
+    
+    
+    <section id="pagec">
+        
+    </section>
+    
+    
+    
+    
+    
+    
     <script type="text/javascript" charset="utf-8">
     
 $(document).ready(function() { 
     $("#rarrow").click(function() {
 
         var src = $('#jeux').attr('src');
+        $('#jeux').removeClass('fadein');
+        $('#jeux').addClass('fadeout');
+        
+        setTimeout(fade, 400);
+        function fade(){
+        $('#jeux').addClass('fadein');
 
         //if the current image is picture1.png, change it to picture2.png
         if(src == 'game1.png') {
             $("#jeux").attr("src","game2.png");
+            $('#jeux').removeClass('fadeout');
+
 
         //if the current image is picture2.png, change it to picture3.png 
         } else if(src == "game2.png") {
             $("#jeux").attr("src","game3.png"); 
+            $('#jeux').removeClass('fadeout');
+            
 
         //if the current image is anything else, change it back to picture1.png
-        } else {
+        } else {    
+            $('#jeux').removeClass('fadeout');
+
             $("#jeux").attr("src","game1.png");
+        }
         }
         }); 
     
     $("#larrow").click(function() {
+        $('#jeux').removeClass('fadein');
+        $('#jeux').addClass('fadeout');
+        
+        setTimeout(fade, 400);
+        
+        
+
+        function fade(){
+        $('#jeux').addClass('fadein');
 
         var src = $('#jeux').attr('src');
 
         //if the current image is picture1.png, change it to picture2.png
         if(src == 'game1.png') {
             $("#jeux").attr("src","game3.png");
+                    $('#jeux').removeClass('fadeout');
+            
 
         //if the current image is picture2.png, change it to picture3.png 
         } else if(src == "game2.png") {
             $("#jeux").attr("src","game1.png"); 
+                    $('#jeux').removeClass('fadeout');
 
         //if the current image is anything else, change it back to picture1.png
         } else {
             $("#jeux").attr("src","game2.png");
+                    $('#jeux').removeClass('fadeout');
+
         }
-        console.log(src);
+        }
+
     }); 
+
 });
 </script>
     </body>
     
-</html
+</html> 
