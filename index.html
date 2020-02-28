@@ -10,11 +10,17 @@
              $(window).on('scroll', function() {
               if($(window).scrollTop() > 100) {
                 $('header').addClass('black');
+                $("#logo").attr("src","gearchange.png");
+
                 
             }
-            else
+            else if($(window).scrollTop() < 100){
                 $('header').removeClass('black')
-        
+                $("#logo").attr("src","gear.png");
+                
+                
+            }
+
         })
         $(window).on('scroll', function() {
               if($(window).scrollTop() > 100) {
@@ -70,6 +76,10 @@
             <p>Something i really like is making game. Since<br> I was a kid i've been playing game, ive always <br>been interested in how they were made and <br>how were they working, so I decide to learn <br>how do we make game.<br>
 <br>Here's some of the game i made in a week :
 </p>
+
+    <h2 id="buttonpage2">
+        My Games
+    </h2>
             
         </div>
         <div id="gamechange">
