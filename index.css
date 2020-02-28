@@ -10,6 +10,7 @@ a:link{
 
 head,body{
     margin: 0;
+    overflow-x: hidden;
     
 }
 section{
@@ -99,14 +100,14 @@ span{
 }
 
 #vague{
-position: absolute;
-top: 350px;
-left: 636px;
-
+    position: absolute;
+right: 0%;
+bottom: 0%;
 width: 900px;
 height: 395px;
+
 z-index: 1;
-    pointer-events:none
+pointer-events:none
 }
 #content{
     
@@ -171,10 +172,7 @@ z-index: 1;
     margin-left: 940px;
     margin-top: 200px;
 }
-#gamechange #jeux{
-        width: 350px;
-        height: 400px;
-}
+
 #rarrow{
     float:right;
     margin-top: 150px;
@@ -183,6 +181,10 @@ z-index: 1;
     float:left;
     margin-top: 150px;
     
+}
+#gamechange #jeux{
+        width: 350px;
+        height: 400px;
 }
 #larrow:hover{
 cursor: pointer;
