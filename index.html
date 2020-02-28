@@ -4,7 +4,7 @@
         <meta http-equiv="content-type" content="text/html; charset=utf-8" />
         <title>Moi et Moi</title>
         <link rel="stylesheet" href="index.css" type="text/css" media="all" />
-                <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
             <script type="text/javascript">
              $(window).on('scroll', function() {
@@ -25,11 +25,9 @@
                 $('.inner_header').removeClass('white')
         
         })
-        $("#rarrow").click(function() {
-            alert( "Handler for .click() called." );
-        }) ;
-                
+
         </script>
+
     </head>
     
     <body>
@@ -75,7 +73,7 @@
             
         </div>
         <div id="gamechange">
-            <img id="jeux" src="jeux.png" alt="game" />
+            <img id="jeux" src="game1.png" alt="game" />
             <img id="larrow" src="leftarrow.png" alt="" />
             
             <img id="rarrow" src="rightarrow.png" alt="" />
@@ -87,5 +85,47 @@
     
         
     </section>
+    <script type="text/javascript" charset="utf-8">
+    
+$(document).ready(function() { 
+    $("#rarrow").click(function() {
+
+        var src = $('#jeux').attr('src');
+
+        //if the current image is picture1.png, change it to picture2.png
+        if(src == 'game1.png') {
+            $("#jeux").attr("src","game2.png");
+
+        //if the current image is picture2.png, change it to picture3.png 
+        } else if(src == "game2.png") {
+            $("#jeux").attr("src","game3.png"); 
+
+        //if the current image is anything else, change it back to picture1.png
+        } else {
+            $("#jeux").attr("src","game1.png");
+        }
+        }); 
+    
+    $("#larrow").click(function() {
+
+        var src = $('#jeux').attr('src');
+
+        //if the current image is picture1.png, change it to picture2.png
+        if(src == 'game1.png') {
+            $("#jeux").attr("src","game3.png");
+
+        //if the current image is picture2.png, change it to picture3.png 
+        } else if(src == "game2.png") {
+            $("#jeux").attr("src","game1.png"); 
+
+        //if the current image is anything else, change it back to picture1.png
+        } else {
+            $("#jeux").attr("src","game2.png");
+        }
+        console.log(src);
+    }); 
+});
+</script>
     </body>
+    
 </html>
