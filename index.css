@@ -109,13 +109,13 @@ span{
 
 #vague{
     position: absolute;
-right: 0%;
-bottom: 0%;
-width: 900px;
-height: 395px;
+    right: 0%;
+    bottom: 0%;
+    width: 900px;
+    height: 395px;
 
-z-index: 1;
-pointer-events:none
+    z-index: 1;
+    pointer-events:none
 }
 #content{
     
@@ -206,7 +206,7 @@ pointer-events:none
 }
 #jeux.fadein{
     
-    animation-duration: 0.8s;
+    animation-duration: 1ss;
     animation-name: fadein;
 }
 #gamechange #jeux:hover{

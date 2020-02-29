@@ -83,7 +83,7 @@
             
         </div>
         <div id="gamechange">
-            <img id="jeux" src="game1.png" alt="game" />
+            <a href="https://simmer.io/@doxteur"><img id="jeux" src="game1.png" alt="game" /></a><
             <img id="larrow" src="leftarrow.png" alt="" />
             
             <img id="rarrow" src="rightarrow.png" alt="" />
@@ -111,7 +111,6 @@
 $(document).ready(function() { 
     $("#rarrow").click(function() {
 
-        var src = $('#jeux').attr('src');
         $('#jeux').removeClass('fadein');
         $('#jeux').addClass('fadeout');
         
@@ -157,6 +156,8 @@ $(document).ready(function() {
         if(src == 'game1.png') {
             $("#jeux").attr("src","game3.png");
                     $('#jeux').removeClass('fadeout');
+                    $("").attr("href", "http://www.google.com/")
+
             
 
         //if the current image is picture2.png, change it to picture3.png 
